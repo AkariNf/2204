@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }.hero {
     background-image: linear-gradient(rgba(53, 53, 53, 0.466), rgb(0, 0, 0)), url("../img/wp10431131.webp");
     width: 100%;
@@ -27,42 +28,48 @@
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 3px 3px #070707;
 }
-.fontarial {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.text30 {
-    font-size: 30px;
-}
-.body_style {
-    background-color: #e0e0e0;
-    color: rgb(0, 0, 0);
-}
 .footer_style {
     background-color: #000000;
     color: rgb(255, 255, 255);
 }
-.contenedor {
-    width: 80%;
-    margin: auto;
-    padding:  80px 0 0 0;
-}
-.footercont{
-    width: 100%;
-    margin: auto;
-    padding:  30px 0 5px 50px;
-}
-.intcont {
-    width: 100%;
-    margin: auto;
-    padding:  60px 0 80px 400px;
-}
 .titulo {
-    font-weight: 300px;
+    font-weight: 150px;
     font-size: 45px;
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: left;
+    margin-bottom: 40px;
 }
-.imageleft {
-    float: left;
-    width: 350px;
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding:  80px 0;
+}
+.contenedor-card{
+    display: flex;/* establece los tipos de visualización de un elemento*/
+    width: 100%;
+    justify-content: space-evenly;/*define como el navegador distribuye el espacio*/
+    flex-wrap: wrap;/*los elementos hijos permanecen en la línea*/ 
+}
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0 , 0.5);/*permite sombrear el contorno*/
+    width: 30%;
+    text-align: left;
+    transform: scale(1);/*modifica formato visual de css*/
+    transition: transform 0.6s;
+}
+.card:hover{
+    box-shadow: 0 0 6px rgba(0, 0, 0 , 0.5);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* podemos dar estilos a los elementos que esten dentro de un contenedor con el nombre de la clase*/
+.card img{
+    width: 30%;
+    margin: 0 0 20px 0;
+}
+.card p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card div{
+    padding: 40px 40px;
 }
